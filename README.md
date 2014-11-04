@@ -1,31 +1,31 @@
-这里是标题
+yii2-icons
 =====
-这里是描述
+用于yii2的所以字体图标的集合类
 
-Installation
+安装
 ------------
 
-The preferred way to install this extension is through [composer](http://getcomposer.org/download/).
+安装这个扩展的首选方法是通过 [composer](http://getcomposer.org/download/)。
 
-Either run
-
-```
-php composer.phar require --prefer-dist yiichina/yii2-icons "*"
-```
-
-or add
+可以运行
 
 ```
-"yiichina/yii2-icons": "*"
+php composer.phar require --prefer-dist yiichina/yii2-icons "dev-master"
 ```
 
-to the require section of your `composer.json` file.
+也可以添加
+
+```
+"yiichina/yii2-icons": "dev-master"
+```
+
+到你的 `composer.json` 文件的包含部分。
 
 
-Usage
+使用
 -----
 
-Once the extension is installed, simply use it in your code by  :
+一量扩展安装完成，你可以简单的使用它如以下代码：
 
 ```php
-<?= \yiichina\icon\AutoloadExample::widget(); ?>```
+<?= \yiichina\icon\Icons::widget(); ?>```
