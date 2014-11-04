@@ -1,0 +1,21 @@
+{
+    "name": "yiichina/yii2-icon",
+    "description": "这里是描述",
+    "type": "yii2-extension",
+    "keywords": ["yii2","extension","icon"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Caption",
+            "email": "admin@yiichina.com"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "yiichina\\icon\\": ""
+        }
+    }
+}
