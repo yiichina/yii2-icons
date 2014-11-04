@@ -10,13 +10,13 @@ The preferred way to install this extension is through [composer](http://getcomp
 Either run
 
 ```
-php composer.phar require --prefer-dist yiichina/yii2-icon "*"
+php composer.phar require --prefer-dist yiichina/yii2-icons "*"
 ```
 
 or add
 
 ```
-"yiichina/yii2-icon": "*"
+"yiichina/yii2-icons": "*"
 ```
 
 to the require section of your `composer.json` file.
