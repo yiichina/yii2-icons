@@ -28,4 +28,4 @@ php composer.phar require --prefer-dist yiichina/yii2-icons "dev-master"
 一量扩展安装完成，你可以简单的使用它如以下代码：
 
 ```php
-<?= \yiichina\icon\Icons::widget(); ?>```
+<?= \yiichina\icons\Icon::widget(); ?>```
