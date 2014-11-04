@@ -1,11 +1,11 @@
 <?php
 
-namespace yiichina\icon;
+namespace yiichina\icons;
 
 /**
  * This is just an example.
  */
-class Icons extends \yii\base\Widget
+class Icon extends \yii\base\Widget
 {
 	public $sourcePath = '@vendor/fortawesome/font-awesome';
     public $depends = array(
@@ -18,7 +18,7 @@ class Icons extends \yii\base\Widget
         $this->setupAssets('css', ['css/font-awesome']);
         parent::init();
     }
-    
+
     public function run()
     {
         return "Hello!";
