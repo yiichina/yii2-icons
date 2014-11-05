@@ -20,6 +20,6 @@ class Icon extends \yii\base\Widget
     {
         $class = $framework . ' ' . $framework . '-' . $name;
         $options['class'] = empty($options['class']) ? $class : $class . ' ' . $options['class'];
-        return Html::tag('span', null, $options);
+        return Html::tag('span', null, $options) . ' ';
     }
 }
