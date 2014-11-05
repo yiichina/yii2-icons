@@ -10,7 +10,7 @@ use yii\Helpers\Html;
  */
 class Icon extends \yii\base\Widget
 {
-    public function run()
+    public function init()
     {
         $view = $this->getView();
         IconAsset::register($view);
