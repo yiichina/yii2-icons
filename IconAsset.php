@@ -19,10 +19,10 @@ class IconAsset extends AssetBundle
 {
     public $sourcePath = '@vendor/fortawesome/font-awesome';
 
-    public $js = [
-        'css/font-awesome.js',
+    public $css = [
+        'css/font-awesome.css',
     ];
-    
+
     public $depends = array(
         'yii\web\YiiAsset',
         'yii\bootstrap\BootstrapAsset'
