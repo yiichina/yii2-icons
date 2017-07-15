@@ -1,5 +1,6 @@
 yii2-icons
 =====
+[![Yii2](https://img.shields.io/badge/Powered_by-Yii_Framework-green.svg?style=flat)](http://www.yiiframework.com/)
 用于yii2的所以字体图标的集合类
 
 安装
