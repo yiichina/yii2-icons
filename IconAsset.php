@@ -17,14 +17,13 @@ use yii\web\AssetBundle;
  */
 class IconAsset extends AssetBundle
 {
-    public $sourcePath = '@vendor/fortawesome/font-awesome';
+    public $sourcePath = '@bower/fortawesome';
 
     public $css = [
-        'css/font-awesome.css',
+        'css/font-awesome.min.css',
     ];
 
     public $depends = array(
-        'yii\web\YiiAsset',
         'yii\bootstrap\BootstrapAsset'
     );
 }

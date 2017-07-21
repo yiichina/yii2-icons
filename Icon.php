@@ -2,7 +2,6 @@
 
 namespace yiichina\icons;
 
-use yiichina\icons\IconAsset;
 use yii\Helpers\Html;
 
 /**
