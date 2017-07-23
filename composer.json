@@ -14,7 +14,7 @@
     "require": {
         "yiisoft/yii2": "*",
         "yiisoft/yii2-bootstrap": "*",
-        "yiichina/yii2-fontawesome": "*"
+        "bower-asset/fontawesome": "*"
     },
     "autoload": {
         "psr-4": {
