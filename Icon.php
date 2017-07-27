@@ -2,7 +2,7 @@
 
 namespace yiichina\icons;
 
-use yii\Helpers\Html;
+use yii\helpers\Html;
 
 /**
  * This is just an example.
@@ -15,10 +15,10 @@ class Icon extends \yii\base\Widget
         IconAsset::register($view);
     }
 
-    public static function show($name, $framework = 'glyphicon', $options = [])
+    public static function show($name, $framework = 'fa', $start = '', $end = ' ', $options = [])
     {
         $class = $framework . ' ' . $framework . '-' . $name;
         $options['class'] = empty($options['class']) ? $class : $class . ' ' . $options['class'];
-        return Html::tag('span', null, $options) . ' ';
+        return $start . Html::tag($framework == 'fa' ? 'i' : 'span', null, $options) . $end;
     }
 }

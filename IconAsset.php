@@ -17,7 +17,7 @@ use yii\web\AssetBundle;
  */
 class IconAsset extends AssetBundle
 {
-    public $sourcePath = '@bower/fortawesome';
+    public $sourcePath = '@bower/fontawesome';
 
     public $css = [
         'css/font-awesome.min.css',
