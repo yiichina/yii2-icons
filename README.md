@@ -17,13 +17,13 @@ Yii2 Icons
 可以运行
 
 ```
-php composer.phar require --prefer-dist yiichina/yii2-icons "dev-master"
+composer require --prefer-dist yiichina/yii2-icons "*"
 ```
 
 也可以添加
 
 ```
-"yiichina/yii2-icons": "dev-master"
+"yiichina/yii2-icons": "*"
 ```
 
 到你的 `composer.json` 文件的包含部分。
@@ -32,7 +32,7 @@ php composer.phar require --prefer-dist yiichina/yii2-icons "dev-master"
 使用
 -----
 
-一量扩展安装完成，你可以简单的使用它如以下代码：
+一旦扩展安装完成，你可以简单的使用它如以下代码：
 
 ```php
 use yiichina\icons\Icon;
