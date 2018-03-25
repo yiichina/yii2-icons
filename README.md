@@ -40,3 +40,7 @@ use yiichina\icons\Icon;
 <?= Icon::show('user', 'glyphicon'); ?>  //渲染内容为 <span class="glyphicon glyphicon-user"></span>
 <?= Icon::show('user', 'fa') ?> 或 <?= Icon::show('user') ?> //渲染内容为 <i class="fa fa-user"></i>
 ```
+TODO
+----
+增加 svg 图标支持
+
