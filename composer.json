@@ -4,16 +4,16 @@
     "type": "yii2-extension",
     "keywords": ["yii2","extension","icons"],
     "homepage": "http://www.yiichina.com",
-    "license": "BSD 3-Clause",
+    "license": "BSD-3-Clause",
     "authors": [
         {
-            "name": "Caption",
+            "name": "cuileon",
             "email": "admin@yiichina.com"
         }
     ],
     "require": {
         "yiisoft/yii2": "~2.0.0",
-        "bower-asset/font-awesome": "~4.1.0"
+        "bower-asset/font-awesome": "~5.0.0"
     },
     "autoload": {
         "psr-4": {
