@@ -37,6 +37,12 @@ composer require --prefer-dist yiichina/yii2-icons "*"
 ```php
 use yiichina\icons\Icon;
 
-<?= Icon::show('user') ?> //渲染内容为 <span class="fa fa-user"></span>
+<?= Icon::show('user', [
+    'type' => 'fas', // 图标分类
+    'tagName' => 'i', // 标签名，默认是 i
+    'start' => null, // 开始字符
+    'end' => ' ', // 结束字符
+    'class' => '' // 追加的 class
+]) ?> //渲染内容为 <i class="fas fa-user"></i>
 ```
 

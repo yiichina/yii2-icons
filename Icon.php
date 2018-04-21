@@ -9,18 +9,20 @@ use yii\helpers\Html;
  */
 class Icon extends \yii\base\Widget
 {
-    public function init()
-    {
-        $view = $this->getView();
-        IconAsset::register($view);
-    }
-
+    /**
+     * @param $name 图标名称
+     * @param $options 选项参数
+     * @return string
+     */
     public static function show($name, $options = [])
     {
         IconAsset::register(\Yii::$app->getView());
-        
-        $class = $framework . ' ' . $framework . '-' . $name;
-        $options['class'] = empty($options['class']) ? $class : $class . ' ' . $options['class'];
-        return $start . Html::tag($framework == 'fa' ? 'i' : 'span', null, $options) . $end;
+        $type = ArrayHelper::remove($options, 'type', 'fas');
+        $tagName = ArrayHelper::remove($options, 'tagName', 'i');
+        $start = ArrayHelper::remove($options, 'start', null);
+        $end = ArrayHelper::remove($options, 'start', ' ');
+        ArrayHelper::setValue($options, 'class', "$type fa-$name");
+        return $start . Html::tag($tagName, null, $options) . $end;
     }
 }
+
