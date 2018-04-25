@@ -3,6 +3,7 @@
 namespace yiichina\icons;
 
 use yii\helpers\Html;
+use yii\helpers\ArrayHelper;
 
 /**
  * This is just an example.
@@ -10,19 +11,19 @@ use yii\helpers\Html;
 class Icon extends \yii\base\Widget
 {
     /**
-     * @param $name 图标名称
-     * @param $options 选项参数
+     * @param $name string 图标名称
+     * @param $options array 图标参数
+     * @param $htmlOptions array HTML 参数
      * @return string
      */
-    public static function show($name, $options = [])
+    public static function show($name, $options = [], $htmlOptions = [])
     {
         IconAsset::register(\Yii::$app->getView());
-        $type = ArrayHelper::remove($options, 'type', 'fas');
         $tagName = ArrayHelper::remove($options, 'tagName', 'i');
+        $type = ArrayHelper::remove($options, 'type', 'fas');
         $start = ArrayHelper::remove($options, 'start', null);
-        $end = ArrayHelper::remove($options, 'start', ' ');
-        ArrayHelper::setValue($options, 'class', "$type fa-$name");
-        return $start . Html::tag($tagName, null, $options) . $end;
+        $end = ArrayHelper::remove($options, 'end', ' ');
+        Html::addCssClass($htmlOptions, ['type' => $type, 'name' => 'fa-' . $name]);
+        return $start . Html::tag($tagName, null, $htmlOptions) . $end;
     }
 }
-
