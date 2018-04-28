@@ -17,15 +17,7 @@ use yii\web\AssetBundle;
  */
 class IconAsset extends AssetBundle
 {
-    public function init()
-    {
-        $this->sourcePath = '@bower/font-awesome/svg-with-js';
-        $this->css = [
-            'css/fa-svg-with-js.css',
-        ];
-        $this->js = [
-            'js/fontawesome-all.min.js',
-        ];
-        parent::init();
-    }
+    public $depends = array(
+        'yiichina\icons\FontAwesome',
+    );
 }
