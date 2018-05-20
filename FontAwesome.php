@@ -19,7 +19,7 @@ class FontAwesome implements IconInterface
     public function __construct($type, $name, $options = [])
     {
         FontAwesomeAsset::register(\Yii::$app->getView());
-        Html::addCssClass($this->htmlOptions, ['type' => $type, 'name' => 'fa-' . $name]);
+        Html::addCssClass($this->htmlOptions, array_merge(['type' => $type, 'name' => 'fa-' . $name], $options['class']));
     }
 
     public function render()
@@ -28,56 +28,5 @@ class FontAwesome implements IconInterface
     public function __toString()
     {
         return Html::tag($this->tag, null, $this->htmlOptions);
-    }
-
-    public function fw()
-    {
-        Html::addCssClass($this->htmlOptions, ['fw' => 'fa-fw']);
-        return $this;
-    }
-
-    public static function spin()
-    {
-
-    }
-
-    public static function size()
-    {
-
-    }
-    
-    public static function transform()
-    {
-
-    }
-
-    public static function mask()
-    {
-
-    }
-
-    public static function ul()
-    {
-
-    }
-
-    public static function border()
-    {
-
-    }
-
-    public static function pullRight()
-    {
-
-    }
-
-    public static function pullLeft()
-    {
-
-    }
-
-    public static function pulse()
-    {
-
     }
 }
