@@ -18,6 +18,6 @@ use yii\web\AssetBundle;
 class IconAsset extends AssetBundle
 {
     public $depends = array(
-        'yiichina\icons\FontAwesome',
+        'yiichina\icons\FontAwesomeAsset',
     );
 }
