@@ -19,15 +19,7 @@ class FontAwesomeAsset extends AssetBundle
 {
     public $sourcePath = '@bower/font-awesome/svg-with-js';
 
-    public $css = [
-        'css/fa-svg-with-js.css',
-    ];
-
     public $js = [
         'js/fontawesome-all.min.js',
-    ];
-
-    public $jsOptions = [
-        'position' => \yii\web\View::POS_HEAD,
     ];
 }
